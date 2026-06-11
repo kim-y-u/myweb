@@ -1,10 +1,83 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <title>서시</title>
 
-  <body>
-    <h1>테스트 홈페이지를 만들어 봅시다.</h1>
-  </body>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: #f5f5f5;
+            font-family: "맑은 고딕", sans-serif;
+        }
+
+        .poem {
+            width: 80%;
+            max-width: 600px;
+            padding: 30px;
+
+            text-align: center;
+            line-height: 2;
+
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 0 20px gray;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+
+        /* 반응형 웹 */
+        @media screen and (max-width: 600px) {
+            .poem {
+                width: 90%;
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="poem">
+        <h1>서시</h1>
+
+        <p>
+            죽는 날까지 하늘을 우러러<br>
+            한 점 부끄럼이 없기를,<br><br>
+
+            잎새에 이는 바람에도<br>
+            나는 괴로워했다.<br><br>
+
+            별을 노래하는 마음으로<br>
+            모든 죽어 가는 것을 사랑해야지<br><br>
+
+            그리고 나한테 주어진 길을<br>
+            걸어가야겠다.
+        </p>
+
+        <p>- 윤동주 -</p>
+    </div>
+
+</body>
 </html>
